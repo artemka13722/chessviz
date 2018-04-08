@@ -50,3 +50,8 @@ void printBoard(){
     }
     printf("************************\n");
 }
+
+void movePawn(int r, int c, int tor, int toc){
+        board[tor][toc] = board[r][c];
+        board[r][c] = &block;
+}
